@@ -4,6 +4,23 @@
 #include <SFML/System/Vector2.hpp>
 struct Vector2
 {
+
+    static Vector2* Down;// = Vector2(0.0, -1.0);
+
+    static Vector2* Left;// = Vector2(-1.0, 0.0);
+
+    static Vector2* NegativeInfinity;// = Vector2(Mathf::NegativeInfinity, Mathf::NegativeInfinity);
+
+    static Vector2* One;// = Vector2(1.0, 1.0);
+
+    static Vector2* PositiveInfinity;// = Vector2(Mathf::PositiveInfinity, Mathf::PositiveInfinity);
+
+    static Vector2* Right;// = Vector2(1.0, 0.0);
+
+    static Vector2* Up;// = Vector2(0.0, 1.0);
+
+    static Vector2* Zero;// = Vector2(0.0, 0.0);    
+
     float x, y;
     inline Vector2(float xpos, float ypos)
     {
@@ -54,22 +71,6 @@ struct Vector2
         }
         return false;
     }
-  static Vector2* Down;// = Vector2(0.0, -1.0);
-
-  static Vector2* Left;// = Vector2(-1.0, 0.0);
-
-  static Vector2* NegativeInfinity;// = Vector2(Mathf::NegativeInfinity, Mathf::NegativeInfinity);
-
-  static Vector2* One;// = Vector2(1.0, 1.0);
-
-  static Vector2* PositiveInfinity;// = Vector2(Mathf::PositiveInfinity, Mathf::PositiveInfinity);
-   
-  static Vector2* Right;// = Vector2(1.0, 0.0);
-    
-  static Vector2* Up;// = Vector2(0.0, 1.0);
-    
-  static Vector2* Zero;// = Vector2(0.0, 0.0);    
-
 
     inline float Magnitude()
     {
